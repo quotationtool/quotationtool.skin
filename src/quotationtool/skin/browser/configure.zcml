@@ -1,0 +1,93 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:z3c="http://namespaces.zope.org/z3c"
+    i18n_domain="quotationtool">
+
+  <include file="dependencies.zcml"/>
+
+  <z3c:layout
+      for="*"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      template="layout.pt"
+      />
+  <z3c:macro
+      name="quotationtool-layout"
+      macro="quotationtool-layout"
+      template="layout.pt"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      />
+  <z3c:layout
+      for="..interfaces.ITabbedContentLayout"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      template="layout_tabbedcontent.pt"
+      />
+  <resourceLibrary
+      name="quotationtool.biblatex"
+      require="quotationtool.biblatex.css"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      />
+  <resourceLibrary
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      name="quotationtool.biblatex.css">
+    <directory
+	source="css"
+	include="global.css"
+	/>
+  </resourceLibrary>
+  <browser:resourceDirectory
+      name="quotationtool.biblatex.images"
+      directory="images"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      />
+
+
+  <browser:viewletManager
+      name="mainnav"
+      class=".nav.MainNav"
+      provides="..interfaces.IMainNav"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      permission="zope.View"
+      />
+  <z3c:template
+      for=".nav.MainNavItem"
+      template="mainnavitem.pt"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      />
+
+  <browser:viewletManager
+      name="itemtabs"
+      class=".tabs.ItemTabs"
+      provides="..interfaces.IItemTabs"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      permission="zope.View"
+      />
+
+
+  <include package=".authentication"/>
+
+      
+  <!-- default label and details and list views -->
+  <view
+      name="label"
+      type="zope.publisher.interfaces.browser.IBrowserRequest"
+      for="*"
+      factory=".default.NotImplementedView"
+      permission="zope.View"
+      />
+  <view
+      name="details"
+      type="zope.publisher.interfaces.browser.IBrowserRequest"
+      for="*"
+      factory=".default.NotImplementedView"
+      permission="zope.View"
+      />
+  <view
+      name="list"
+      type="zope.publisher.interfaces.browser.IBrowserRequest"
+      for="*"
+      factory=".default.NotImplementedView"
+      permission="zope.View"
+      />
+
+</configure>

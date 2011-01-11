@@ -1,0 +1,36 @@
+<configure
+   xmlns="http://namespaces.zope.org/z3c"
+   i18n_domain="quotationtool">
+
+  <pagelet
+     name="loginForm.html"
+     for="*"
+     class=".loginform.Pagelet"
+     permission="zope.Public"
+     layer="quotationtool.skin.interfaces.IQuotationtoolBrowserLayer"
+     />
+  <template
+     for=".loginform.Pagelet"
+     template="loginform.pt"
+     layer="quotationtool.skin.interfaces.IQuotationtoolBrowserLayer"
+     />
+
+  <pagelet
+     name="login.html"
+     for="*"
+     class=".login.Pagelet"
+     permission="zope.Public"
+     allowed_interface="zope.app.publisher.interfaces.http.ILogin"
+     layer="quotationtool.skin.interfaces.IQuotationtoolBrowserLayer"
+     />
+
+  <pagelet
+     name="logout.html"
+     for="*"
+     class=".logout.Pagelet"
+     permission="zope.Public"
+     allowed_interface="zope.app.publisher.interfaces.http.ILogout"
+     layer="quotationtool.skin.interfaces.IQuotationtoolBrowserLayer"
+     />
+
+</configure>
