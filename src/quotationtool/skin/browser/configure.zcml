@@ -89,5 +89,20 @@
       factory=".default.NotImplementedView"
       permission="zope.View"
       />
+      
+  <!-- default pagelet named index.html -->
+  <z3c:pagelet
+      for="*"
+      name="index.html"
+      permission="zope.View"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      class=".default.NotImplementedPagelet"
+      />
+  <z3c:template
+      for=".default.NotImplementedPagelet"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      template="default.pt"
+      />
+
 
 </configure>
