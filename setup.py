@@ -13,7 +13,7 @@ name='quotationtool.skin'
 
 setup(
     name = name,
-    version='0.1',
+    version='0.1.0',
     description="Browser skin for the quotationtool application",
     long_description=(
         read('README')
@@ -78,6 +78,7 @@ setup(
         test = [
             'zope.testing',
             'zope.testrunner',
+            'zope.configuration',
             ],
         ),
     )
