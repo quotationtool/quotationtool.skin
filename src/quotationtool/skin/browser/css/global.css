@@ -252,4 +252,160 @@ td span.fieldname {
     font-weight: 600;
 }
 
+
+
+
+.container-listing .even, .container-listing .odd, .container-listing .head {
+        padding: 10px 20px;
+        margin-top: 1px;
+        }
+
+.container-listing .odd {
+    background-color: #eee;
+    }
+
+.container-listing .even {
+    background-color: #f3f3f3;
+    }
+
+.container-listing .head {
+        background-color: #ddd;
+        } 
+
+.container-listing a {
+        text-decoration: none;
+        }
+        
+.container-listing a:hover {
+        text-decoration: underline;
+        }
+
+.container-listing td {
+        vertical-align: top;
+        }
+        
+#tutorial .tab {
+        border-bottom-style: dotted;
+        }
+
+table.schema-view tr {
+        margin-bottom: 10px;
+        }
+
+table.schema-view td {
+        vertical-align: top;
+        }
+
+table.schema-view td.schema-col .title {
+        font-weight: bold;
+        }
+
+table.schema-view td.schema-col .description {
+        font-size: 0.8em;
+        }
+
+table.schema-view td.schema-col .required {
+        color: red;
+        }
+
+
+#tutorial .add-content,
+.add-content-options a, 
+input.add-content, 
+input.apply-changes,
+input.cancel {
+        text-decoration: none;
+        font-weight: bold;
+        margin: 20px 10px;
+        padding: 5px 10px;
+        border-width: 3px;
+        border-style: solid;
+        }
+
+#tutorial .add-content,
+.add-content-options a, 
+input.add-content, 
+input.apply-changes {
+        color: white;
+        background-color: green;
+        border-top-color: lightgreen;
+        border-right-color: darkgreen;
+        border-bottom-color: darkgreen;
+        border-left-color: lightgreen;
+        }
+
+.add-content-options a:active, 
+input.add-content:active, 
+input.apply-changes:active {
+        border-top-color: darkgreen;
+        border-right-color: lightgreen;
+        border-bottom-color: lightgreen;
+        border-left-color: darkgreen;
+        }
+
+
+
+#attribution-rows div.label label {
+    font-size: 1.2em;
+    font-weight: 600;
+    border: 0;
+    border-bottom: 1px solid #999;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    }
+
+#attribution-rows div.label .description {
+    font-size: 0.9em;
+    margin-top: 5px;
+    }
+
+#attribution-rows span.option {
+    display: block;
+    margin-left: 10px;
+    }
+
+input.attribution-widget {
+    }
+
+
+
+.faq-answer {
+        margin-top: 30px;
+        }
+
+.faq-answer .question-again {
+        font-weight: bold;
+        font-size: 1.2em;
+        }
+
+#faq .section {
+        }
+
+
+#tutorial ul {
+        list-style-type: none;
+        }
+
+#tutorial .add-content {
+        margin-top-width: 100px;
+        }
+
+#tutorial {
+        line-height: 2em;
+        }
+
+#tutorial .button {
+    background-color: #ccc;
+    border-width: 2px;
+    border-style: solid;
+    border-top-color: #eee;
+    border-right-color: #777;
+    border-bottom-color: #777;
+    border-left-color: #eee;
+    padding: 1px 10px;
+    }
+
+
+
 /* ]]> */

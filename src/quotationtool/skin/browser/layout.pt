@@ -24,7 +24,7 @@
 
       <div id="header">
         <metal:block define-slot="header">
-          <h1>quotationtool.biblatex</h1>
+          <h1>quotationtool.org</h1>
         </metal:block>
       </div>
 
