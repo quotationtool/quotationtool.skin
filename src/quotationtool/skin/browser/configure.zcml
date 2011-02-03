@@ -63,6 +63,21 @@
       permission="zope.View"
       />
 
+  <browser:viewletManager
+      name="flags"
+      class=".flags.FlagsManager"
+      provides="..interfaces.IFlags"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      permission="zope.View"
+      />
+  <view
+      name="flags"
+      type="..interfaces.IQuotationtoolBrowserLayer"
+      for="*"
+      factory=".flags.FlagsView"
+      permission="zope.View"
+      />
+
 
   <include package=".authentication"/>
 

@@ -3,6 +3,7 @@ from z3c.form.interfaces import IFormLayer
 from z3c.formui.interfaces import IDivFormLayer
 from z3c.layer.pagelet import IPageletBrowserLayer
 from z3c.menu.ready2go.interfaces import IMenuManager
+from zope.viewlet.interfaces import IViewletManager
 
 
 class IQuotationtoolBrowserLayer(IFormLayer,
@@ -40,4 +41,6 @@ class IItemTabs(IMenuManager):
     """A manager for the tabs."""
 
 
+class IFlags(IViewletManager):
+    """A viewlet manager for flags on an item."""
 
