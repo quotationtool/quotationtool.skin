@@ -21,6 +21,7 @@
   <include package="zc.resourcelibrary"/>
   <include package="z3c.menu.ready2go"/>
   <include package="zope.pluggableauth"/>
+  <include package="z3c.macro"/>
 
 
 </configure>

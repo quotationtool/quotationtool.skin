@@ -12,12 +12,15 @@
     i18n:domain="quotationtool.biblatex"
     >
   <head>
-    <metal:block define-slot="title">
-      <!--title tal:content="provider:page_title">Quotationtool</title-->
-      <title>Quotationtool</title>
-    </metal:block>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <tal:block replace="resource_library:quotationtool.biblatex.css"/>
+    <metal:slot define-slot="html-head">
+      <metal:block define-slot="title">
+	<title>Quotationtool</title>
+      </metal:block>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <tal:block replace="resource_library:quotationtool.css"/>
+      <metal:slot define-slot="html-head-extension">
+      </metal:slot>
+    </metal:slot>
   </head>
   <body>
     <div id="wrapper">
@@ -54,8 +57,8 @@
 	<div id="login" tal:define="principal_id request/principal/id">
 	  <a  
 	      tal:condition="python: principal_id == 'zope.anybody'"
-	      href="/@@login.html"
-	      tal:attributes="href string:${request/URL/0}/@@login.html">
+	      href="@@login.html"
+	      tal:attributes="href string:${context/@@absolute_url}/@@login.html">
 	    login
 	  </a>
 	  <span 
@@ -70,7 +73,9 @@
 	<div id="nav2">
 	  <ul>
 	    <li>
-	      <a href="">Help</a>
+	      <a 
+		  href="/help.html"
+		  tal:attributes="href string:${request/URL/0}/@@help.html">Help</a>
 	    </li>
 	  </ul>
 	</div>

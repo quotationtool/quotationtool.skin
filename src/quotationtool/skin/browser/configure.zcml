@@ -22,21 +22,28 @@
       layer="..interfaces.IQuotationtoolBrowserLayer"
       template="layout_tabbedcontent.pt"
       />
+  <z3c:macro
+      name="tabbed-content"
+      macro="tabbed-content"
+      template="layout_tabbedcontent.pt"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      />
+
   <resourceLibrary
-      name="quotationtool.biblatex"
-      require="quotationtool.biblatex.css"
+      name="quotationtool"
+      require="quotationtool.css"
       layer="..interfaces.IQuotationtoolBrowserLayer"
       />
   <resourceLibrary
       layer="..interfaces.IQuotationtoolBrowserLayer"
-      name="quotationtool.biblatex.css">
+      name="quotationtool.css">
     <directory
 	source="css"
 	include="global.css"
 	/>
   </resourceLibrary>
   <browser:resourceDirectory
-      name="quotationtool.biblatex.images"
+      name="quotationtool.images"
       directory="images"
       layer="..interfaces.IQuotationtoolBrowserLayer"
       />
@@ -119,5 +126,23 @@
       template="default.pt"
       />
 
+  <!-- quotationtool tales namespace adapter -->
+  <adapter
+      for="*"
+      provides="zope.traversing.interfaces.IPathAdapter"
+      factory=".tales.QuotationtoolTalesAPI"
+      name="quotationtool"
+      />
+  <class
+      class=".tales.QuotationtoolTalesAPI">
+    <allow
+	interface="zope.tales.interfaces.ITALESFunctionNamespace"
+	/>
+    <allow
+	interface="..interfaces.IItemInfo"
+	/>
+  </class>
+ 
+  <include file="exception.zcml"/>
 
 </configure>

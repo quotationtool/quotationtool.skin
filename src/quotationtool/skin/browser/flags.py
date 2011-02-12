@@ -21,4 +21,4 @@ class FlagsView(BrowserView):
             IContentProvider,
             name = 'flags')
         provider.update()
-        provider.render()
+        return provider.render()

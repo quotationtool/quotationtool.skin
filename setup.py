@@ -57,6 +57,8 @@ setup(
         'zope.pluggableauth',
         'zope.app.authentication',
         'zope.traversing',
+        'zope.tales',
+        'zope.app.component',
 
         'z3c.template',
         'z3c.macro',
@@ -72,7 +74,6 @@ setup(
 
         'zope.app.pagetemplate',
         'zope.viewlet',
-        'zope.app.component',
         ],
     extras_require = dict(
         test = [

@@ -9,4 +9,4 @@ class NotImplementedPagelet(BrowserPagelet):
 class NotImplementedView(BrowserView):
     
     def __call__(self):
-        return u"NOT IMPLEMENTED<!-- view '%s' for object %s and request %s IS NOT IMPLEMENTED -->" % (self.__name__, str(self.context), str(self.request))
+        return u"NOT IMPLEMENTED<!-- view '%s' for object %s and request %s IS NOT IMPLEMENTED -->" % (self.__name__, unicode(self.context), unicode(self.request))

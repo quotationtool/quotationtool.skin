@@ -4,6 +4,10 @@ from z3c.formui.interfaces import IDivFormLayer
 from z3c.layer.pagelet import IPageletBrowserLayer
 from z3c.menu.ready2go.interfaces import IMenuManager
 from zope.viewlet.interfaces import IViewletManager
+from zope.i18nmessageid import MessageFactory
+
+
+_ = MessageFactory('quotationtool')
 
 
 class IQuotationtoolBrowserLayer(IFormLayer,
@@ -43,4 +47,13 @@ class IItemTabs(IMenuManager):
 
 class IFlags(IViewletManager):
     """A viewlet manager for flags on an item."""
+
+
+class IItemInfo(zope.interface.Interface):
+    """ There is a tales namespace adapter named 'quotationtool' that
+    provides info about an item in the database."""
+
+    creator = zope.interface.Attribute(
+        "The Title (Name) of the prncipal who created the item.")
+
 
