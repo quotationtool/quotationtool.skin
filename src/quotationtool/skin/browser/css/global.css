@@ -142,6 +142,10 @@ a:active { color: #034ea2; }
 #tabbedcontent pre {
     font-size: 10pt;
 }
+#content p {
+    margin-bottom: 10px;
+    max-width: 50em;
+}
 
 #tabbedcontent-wrapper {
     margin-top: 2em;
@@ -174,10 +178,14 @@ label .required {
     background-color: #dae5f0;    
 }
 .wizard .viewspace .label,
-.edit-form .label {
+.edit-form .viewspace .label {
     border-bottom: 1px solid #a9bcd5;
     font-size: 1.1em;
     font-weight: 600;
+}
+.wizard .viewspace .description,
+.edit-form .viewspace .description {
+    max-width: 500px;
 }
 .wizard .viewspace .step .row .label,
 .edit-form .viewspace .row .label {
