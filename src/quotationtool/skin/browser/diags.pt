@@ -1,0 +1,12 @@
+<div id="diagnostics" i18n:domain="quotationtool">
+  
+  <h1 i18n:translate="">Diagnostics</h1>
+
+  <p class="page-description">This page shows some diagnostic
+  information about the running instance. It may be usefull for
+  debugging.</p>
+
+
+  <div tal:content="structure provider:diagnostics"/>
+
+</div>

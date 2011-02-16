@@ -85,6 +85,25 @@
       permission="zope.View"
       />
 
+  <browser:viewletManager
+      name="diagnostics"
+      class=".diags.DiagnosticsManager"
+      provides="..interfaces.IDiagnostics"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      permission="zope.View"
+      />
+  <z3c:pagelet
+      name="diagnostics.html"
+      for="*"
+      class=".diags.DiagnosticsPagelet"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      permission="zope.View"
+      />
+  <z3c:template
+      for=".diags.DiagnosticsPagelet"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      template="diags.pt"
+      />
 
   <include package=".authentication"/>
 

@@ -57,3 +57,9 @@ class IItemInfo(zope.interface.Interface):
         "The Title (Name) of the prncipal who created the item.")
 
 
+class IDiagnostics(IViewletManager):
+    """ A Viewletmanager for diagnostics """
+
+
+class IDiagnosticsPagelet(zope.interface.Interface):
+    """ A pagelet view that calls the diagnostics viewlet manager."""
