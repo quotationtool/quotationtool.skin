@@ -1,8 +1,14 @@
-<h1>Login Failed!</h1>
+<div class="login login-failed" i18n:domain="quotationtool">
 
-<p style="font-size: 150%">
-  You cancelled the login procedure.
-  <a tal:attributes="href python: view.request.get('nextURL', '.')">
-    Click here to return.
-  </a>
-</p>
+  <h1 i18n:translate="">Login Failed!</h1>
+
+  <p style="font-size: 150%" i18n:translate="">
+    You cancelled the login procedure.
+    <a tal:attributes="href python: view.request.get('nextURL', '.')"
+       i18n:translate="">
+      Click here to return.
+    </a>
+  </p>
+
+</div>
+

@@ -1,4 +1,5 @@
-<tal:block define="principal python:request.principal.id">
+<div class="login login-form" i18n:domain="quotationtool"
+    tal:define="principal python:request.principal.id">
   <h1 i18n:translate="" tal:condition="python: principal == 'zope.anybody'">
     Please provide Login Information
   </h1>
@@ -29,6 +30,10 @@
       <input class="form-element" type="submit" 
              name="SUBMIT" value="Log in" i18n:attributes="value login-button" />
     </div>
-    <input type="hidden" name="camefrom" tal:attributes="value request/camefrom | nothing">
+    <input type="hidden" name="camefrom" tal:attributes="value request/camefrom | nothing" />
   </form>
-</tal:block>
+
+  <!--div class="login-form-extension"
+       tal:content="structure provider:loginformextensions"/-->
+  
+</div>

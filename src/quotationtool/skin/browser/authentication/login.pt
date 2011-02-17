@@ -1,8 +1,12 @@
-<h1>Login successful!</h1>
+<div class="login login-success" i18n:domain="quotationtool">
 
-<p style="font-size: 120%; font-weight:bold;">
-  You are now logged in as 
-  <em tal:content="view/request/principal/title" />
-</p>
+  <h1 i18n:translate="">Login successful!</h1>
+  
+  <p style="font-size: 120%; font-weight:bold;" i18n:translate="logged-in-as">
+    You are now logged in as 
+    <em i18n:name="name" tal:content="view/request/principal/title" />
+  </p>
 
-<a href=".">Back to the main page.</a>
+  <a href="." i18n:translate="">Back to the main page.</a>
+
+</div>

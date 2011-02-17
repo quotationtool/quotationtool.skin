@@ -36,7 +36,8 @@ class Pagelet(object):
     def render(self):
         nextURL = self.request.get('nextURL')
         if IUnauthenticatedPrincipal(self.request.principal, False):
-            component.getUtility(IAuthentication).unauthorized(
+            # changed by Christian Lu&uuml;ck
+            component.getUtility(IAuthentication, context = self.context).unauthorized(
                 self.request.principal.id, self.request)
             return self.failed()
         if nextURL is None:

@@ -1,5 +1,6 @@
 <configure
    xmlns="http://namespaces.zope.org/z3c"
+   xmlns:browser="http://namespaces.zope.org/browser"
    i18n_domain="quotationtool">
 
   <pagelet
@@ -32,5 +33,13 @@
      allowed_interface="zope.app.publisher.interfaces.http.ILogout"
      layer="quotationtool.skin.interfaces.IQuotationtoolBrowserLayer"
      />
+
+  <browser:viewletManager
+      name="loginformextensions"
+      class=".extension.LoginFormExtensions"
+      provides="quotationtool.skin.interfaces.ILoginFormExtensions"
+      layer="quotationtool.skin.interfaces.IQuotationtoolBrowserSkin"
+      permission="zope.View"
+      />
 
 </configure>

@@ -105,9 +105,6 @@
       template="diags.pt"
       />
 
-  <include package=".authentication"/>
-
-      
   <!-- default label and details and list views -->
   <view
       name="label"
@@ -176,6 +173,9 @@
       layer="..interfaces.IQuotationtoolBrowserLayer"
       />
  
+
+  <include package=".authentication"/>
+      
   <include file="exception.zcml"/>
 
 </configure>

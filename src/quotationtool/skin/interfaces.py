@@ -63,3 +63,7 @@ class IDiagnostics(IViewletManager):
 
 class IDiagnosticsPagelet(zope.interface.Interface):
     """ A pagelet view that calls the diagnostics viewlet manager."""
+
+
+class ILoginFormExtensions(IViewletManager):
+    """ Extensions e.g. "sign up" for the login form."""

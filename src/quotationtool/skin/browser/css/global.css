@@ -26,7 +26,12 @@ a:active { color: #034ea2; }
 }
 
 
-#login {float:right; font-size:0.7em; padding:0.5em 0 0 0; border-right:1em solid white;} /*Abstand zum re Rand funktioniert nur über padding, nicht right:0.75em*/
+#login-link {
+    float:right; 
+    font-size:0.7em; 
+    padding:0.5em 0 0 0; 
+    border-right:1em solid white;
+} /*Abstand zum re Rand funktioniert nur über padding, nicht right:0.75em*/
 
 /* ---------- MAINNAV ---------- */
 /*#mainnav {min-width:780px;} makes a mess with IE7 */

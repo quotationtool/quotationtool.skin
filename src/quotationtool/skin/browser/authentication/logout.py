@@ -36,7 +36,7 @@ class Pagelet(object):
     def render(self):
         nextURL = self.request.get('nextURL')
         if not IUnauthenticatedPrincipal(self.request.principal, False):
-            auth = component.getUtility(IAuthentication)
+            auth = component.getUtility(IAuthentication, context = self.context)
             ILogout(auth).logout(self.request)
             if nextURL:
                 return self.redirect()
