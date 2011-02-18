@@ -105,6 +105,14 @@
       template="diags.pt"
       />
 
+  <browser:viewletManager
+      name="loginform_extensions"
+      class=".login.LoginFormExtensions"
+      provides="..interfaces.ILoginFormExtensions"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      permission="zope.View"
+      />
+
   <!-- default label and details and list views -->
   <view
       name="label"

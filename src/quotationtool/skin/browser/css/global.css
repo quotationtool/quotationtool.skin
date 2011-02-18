@@ -160,12 +160,15 @@ a:active { color: #034ea2; }
     
 }
 
+.errors,
+.error,
 .required-info .required, 
 label .required {
     color: darkorange;
 }
 
-/* ------ wizard ------ */
+
+/* ------ wizard and edit-form ------ */
 
 .wizard {
     border: 1px solid #a9bcd5; 
@@ -182,12 +185,25 @@ label .required {
     color: #444;
     background-color: #dae5f0;    
 }
+
+.wizard .viewspace .status,
+.edit-form .viewspace .status {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+
 .wizard .viewspace .label,
 .edit-form .viewspace .label {
     border-bottom: 1px solid #a9bcd5;
     font-size: 1.1em;
     font-weight: 600;
 }
+
+.wizard .viewspace .input-format,
+.edit-form .viewspace .input-format,
+.wizard .viewspace .input-example,
+.edit-form .viewspace .input-example,
 .wizard .viewspace .description,
 .edit-form .viewspace .description {
     max-width: 500px;
@@ -204,7 +220,7 @@ label .required {
 }
 .wizard .viewspace .step .row,
 .edit-form .viewspace .row {
-    margin-top: 0.5em;
+    margin-top: 1.0em;
 }
 .wizard .viewspace .buttons,
 .edit-form .viewspace .buttons {

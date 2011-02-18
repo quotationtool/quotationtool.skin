@@ -34,12 +34,4 @@
      layer="quotationtool.skin.interfaces.IQuotationtoolBrowserLayer"
      />
 
-  <browser:viewletManager
-      name="loginformextensions"
-      class=".extension.LoginFormExtensions"
-      provides="quotationtool.skin.interfaces.ILoginFormExtensions"
-      layer="quotationtool.skin.interfaces.IQuotationtoolBrowserSkin"
-      permission="zope.View"
-      />
-
 </configure>

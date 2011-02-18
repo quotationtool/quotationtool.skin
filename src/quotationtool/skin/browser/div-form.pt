@@ -1,4 +1,4 @@
-<metal:macro use-macro="macro:form">
+<metal:macro use-macro="macro:form" i18n:domain="quotationtool">
   
   <metal:slot fill-slot="main">
 
@@ -16,11 +16,24 @@
                         tal:condition="widget/required">*</span>
                 </label>
               </div>
-	      <div class="description"
-		  tal:condition="python: getattr(widget, 'field', None)">
-		<span i18n:translate=""
-		    tal:content="widget/field/description|nothing">description</span>
-	      </div>
+	      <tal:block condition="python: getattr(widget, 'field', None)">
+		<div class="description">
+		  <span i18n:translate=""
+			tal:content="widget/field/description|nothing">description</span>
+		</div>
+		<div class="input-format"
+		     tal:condition="python: getattr(widget.field, 'format', None)">
+		  <span i18n:translate="input-format">Format: </span>
+		  <span i18n:translate=""
+			tal:content="widget/field/format|nothing">format description</span>
+		</div>
+		<div class="input-example"
+		     tal:condition="python: getattr(widget.field, 'example', None)">
+		  <span i18n:translate="input-example">Example: </span>
+		  <span i18n:translate=""
+			tal:content="widget/field/example|nothing">format example</span>
+		</div>
+	      </tal:block>
               <div class="widget" tal:content="structure widget/render">
                 <input type="text" size="24" value="" />
               </div>

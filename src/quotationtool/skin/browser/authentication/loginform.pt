@@ -33,7 +33,7 @@
     <input type="hidden" name="camefrom" tal:attributes="value request/camefrom | nothing" />
   </form>
 
-  <!--div class="login-form-extension"
-       tal:content="structure provider:loginformextensions"/-->
+  <div class="login-form-extensions"
+       tal:content="structure provider:loginform_extensions"/>
   
 </div>
