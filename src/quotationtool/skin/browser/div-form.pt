@@ -1,5 +1,16 @@
 <metal:macro use-macro="macro:form" i18n:domain="quotationtool">
   
+  <metal:block fill-slot="info">
+    <div class="required-info"
+	 tal:condition="view/widgets/hasRequiredFields"
+	 metal:define-macro="required-info">
+      <tal:info content="structure view/requiredInfo" />
+    </div>
+    <div class="form-info"
+	 tal:condition="view/info|nothing"
+	 tal:content="structure view/info|nothing"/>
+  </metal:block>
+
   <metal:slot fill-slot="main">
 
     <metal:macro define-macro="quotationtool-widget-rows">
