@@ -287,9 +287,10 @@ textarea.textarea-widget {
 #itemtabs li li a, 
 #itemtabs li.selected li a {background:none; padding:0.4em 0 0.25em 1em; border:0; background-image:none; font-weight:normal; text-decoration:underline;}
 #tab li li.selected2  {color:#20344a; font-size:0.7em; font-weight:bold; padding:0.4em 0 0.25em 1em;}
-#
+
 /* anchor named tabs */
 #tabs {
+    display: block;
     position: absolute;
     margin-top:-100px;
 }
