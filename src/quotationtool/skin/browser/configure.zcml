@@ -29,6 +29,11 @@
       layer="..interfaces.IQuotationtoolBrowserLayer"
       />
 
+  <!--browser:resourceDirectory
+      name="quotationtool.css"
+      directory="css"
+      layer="quotationtool.skin.interfaces.IQuotationtoolBrowserLayer"
+      /-->
   <resourceLibrary
       name="quotationtool"
       require="quotationtool.css"
@@ -42,6 +47,7 @@
 	include="global.css"
 	/>
   </resourceLibrary>
+
   <browser:resourceDirectory
       name="quotationtool.images"
       directory="images"

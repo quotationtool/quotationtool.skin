@@ -18,6 +18,9 @@
       </metal:block>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
       <tal:block replace="resource_library:quotationtool.css"/>
+      <!--[if lt IE 7]>
+	  <link rel="stylesheet" type="text/css" href="/@@/quotationtool.css/ltie7.css"/>    
+	  <![endif]-->
       <metal:slot define-slot="html-head-extension">
       </metal:slot>
     </metal:slot>

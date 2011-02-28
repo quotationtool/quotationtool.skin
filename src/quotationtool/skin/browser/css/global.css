@@ -1,6 +1,10 @@
 /* <![CDATA[ */ 
 
-body {font-size:100.01%; color:#333333;}
+body {
+    font-size:100.01%; 
+    color:#333333;
+}
+
 * {margin:0; padding:0;}
 ul {list-style-type:none;}
 img {border:0;}
