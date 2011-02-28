@@ -23,6 +23,10 @@ a:link, a:visited { color: #034ea2; }
 a:hover { color: #f60; }
 a:active { color: #034ea2; }
 
+div.more-links {
+    margin: 5px 0 10px 0;
+}
+
 /* header */
 #header {
     margin: 10px 0 18px 10px;
@@ -479,6 +483,24 @@ input.attribution-widget {
     border-left-color: #eee;
     padding: 1px 10px;
     }
+
+
+/* commentary */
+
+div.comment-meta {
+    margin: 10px 0 5px 0;
+}
+
+div.comment-edit-button {
+    margin: 5px 0 3px 0;
+}
+
+hr.commentary-ruler {
+    border: 0;
+    border-top: 1px solid #a9bcd5;
+    margin: 3px 0 20px 0;
+}
+
 
 
 
