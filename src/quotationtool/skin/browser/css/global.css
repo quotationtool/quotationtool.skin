@@ -485,6 +485,29 @@ input.attribution-widget {
     }
 
 
+/* examples */
+
+span.quotationtool-example-quid {
+    background-image: url('/@@/quotationtool.images/quid.gif');
+}
+span.quotationtool-example-proquo {
+    background-image: url('/@@/quotationtool.images/proquo.gif');
+}
+
+span.quotationtool-example-marker {
+    background-image: url('/@@/quotationtool.images/marker.gif');
+}
+span.quotationtool-example-quid,
+span.quotationtool-example-proquo,
+span.quotationtool-example-marker {
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    min-height: 20px;
+    display: inline-block;
+    background-color:#f0fcf0;
+    border: 1px dotted #ccc;
+}
+
 /* commentary */
 
 div.comment-meta {
