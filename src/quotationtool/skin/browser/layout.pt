@@ -9,7 +9,7 @@
 <html
     xmlns="http://www.w3.org/1999/xhtml"
     xml:lang="en" lang="en"
-    i18n:domain="quotationtool.biblatex"
+    i18n:domain="quotationtool"
     >
   <head>
     <metal:slot define-slot="html-head">
@@ -61,15 +61,21 @@
 	  <a  
 	      tal:condition="python: principal_id == 'zope.anybody'"
 	      href="@@login.html"
-	      tal:attributes="href string:${context/@@absolute_url}/@@login.html">
+	      tal:attributes="href string:${context/@@absolute_url}/@@login.html"
+	      i18n:translate="layout-login-link">
 	    login
 	  </a>
 	  <span 
 	      tal:condition="python: principal_id != 'zope.anybody'">
-	    <span i18n:translate="">Logged in as:</span>
-	    <span tal:content="request/principal/title|default">some user</span>
+	    <span
+		i18n:translate="layout-loggedin-info">
+	      Logged in as:
+	      <span tal:content="request/principal/title|default"
+		   i18n:name="user">some user</span>
+	    </span>
 	    <a href="@@logout.html"
-	       tal:attributes="href string:${context/@@absolute_url}/@@logout.html">
+	       tal:attributes="href string:${context/@@absolute_url}/@@logout.html"
+	       i18n:translate="layout-logout-link">
 	      logout
 	    </a>
 	  </span>
@@ -82,7 +88,8 @@
 	    <li>
 	      <a 
 		  href="/help.html"
-		  tal:attributes="href string:${request/URL/0}/@@help.html">Help</a>
+		  tal:attributes="href string:${request/URL/0}/@@help.html"
+		  i18n:translate="">Help</a>
 	    </li>
 	  </ul>
 	</div>
