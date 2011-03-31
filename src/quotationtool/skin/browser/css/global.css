@@ -200,6 +200,14 @@ label .required {
     font-weight: 600;
 }
 
+.wizard .viewspace .form-info,
+.edit-form .viewspace .form-info {
+    margin-top: 10px;
+    margin-buttom: 10px;
+    border: 1px solid #dae5f0;
+    padding: 5px;
+    width: 490px;
+}
 
 .wizard .viewspace .label,
 .edit-form .viewspace .label {
