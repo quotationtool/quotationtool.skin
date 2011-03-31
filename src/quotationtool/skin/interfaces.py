@@ -45,6 +45,11 @@ class IItemTabs(IMenuManager):
     """A manager for the tabs."""
 
 
+class ISidePanel(IViewletManager):
+    """A viewlet manager for components that should show up in the
+    side panel."""
+
+
 class IFlags(IViewletManager):
     """A viewlet manager for flags on an item."""
 

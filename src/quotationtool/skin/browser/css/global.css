@@ -120,6 +120,16 @@ div.more-links {
     border:1px solid #ccc;
 }
 
+/* --------- SIDE PANEL -------- */
+/*
+#sidepanel-wrapper {
+    float: right;
+    display: block;
+    width: 200px;
+    padding:1em 0.75em 0.75em 0.7em;
+    border: 1px solid red;
+}
+*/
 /* --------- CONTENT --------- */
 
 #content-wrapper {
@@ -203,7 +213,7 @@ label .required {
 .wizard .viewspace .form-info,
 .edit-form .viewspace .form-info {
     margin-top: 10px;
-    margin-buttom: 10px;
+    margin-bottom: 10px;
     border: 1px solid #dae5f0;
     padding: 5px;
     width: 490px;
@@ -311,7 +321,11 @@ textarea.textarea-widget {
     margin-top:-100px;
 }
 
+/* search form */
 
+div.search-form-primer div.primer {
+    margin-bottom: 25px;
+}
 
 /* quotationtool.biblatex specific css classes */
 
@@ -515,6 +529,23 @@ span.quotationtool-example-marker {
     background-color:#f0fcf0;
     border: 1px dotted #ccc;
 }
+
+#examplebyid div {
+    display: inline;
+}
+#examplebyid h1 {
+    margin-bottom: 5px;
+}
+#examplebyid div.status {
+    display: block;
+    color: orange;
+    font-size: 1.0em;
+}
+#examplebyid input.text-widget {
+    width: 10em;
+}
+
+
 
 /* commentary */
 

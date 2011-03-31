@@ -96,6 +96,10 @@
       </div><!-- bgmainnav -->
       <br class="cleaner"/>
 
+      <div id="sidepanel-wrapper"
+	  tal:content="structure provider:sidepanel">
+      </div>
+
       <div id="content-wrapper">
 	
 	<div id="contentlabel"

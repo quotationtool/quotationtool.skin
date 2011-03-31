@@ -1,0 +1,5 @@
+<div id="sidepanel"
+    tal:repeat="viewlet view/viewlets">
+  <div class="sidepanel-component"
+      tal:content="structure viewlet/render"/>
+</div>

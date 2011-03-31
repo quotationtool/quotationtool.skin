@@ -77,6 +77,14 @@
       />
 
   <browser:viewletManager
+      name="sidepanel"
+      class=".sidepanel.SidePanel"
+      provides="..interfaces.ISidePanel"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      permission="zope.View"
+      />
+
+  <browser:viewletManager
       name="flags"
       class=".flags.FlagsManager"
       provides="..interfaces.IFlags"
