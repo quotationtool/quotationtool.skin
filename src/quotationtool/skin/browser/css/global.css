@@ -169,7 +169,11 @@ div.more-links {
     margin-bottom: 10px;
     max-width: 50em;
 }
-
+#content blockquote,
+#tabbedcontent blockquote {
+    padding-left: 25px;
+    padding-right: 25px;
+}
 #tabbedcontent-wrapper {
     margin-top: 2em;
 }
@@ -556,6 +560,10 @@ div.commentary p {
 
 div.commentary h1 {
     font-size: 1.4em;
+}
+
+div.commentary h2 {
+    font-size: 1.2em;
 }
 
 div.comment-meta {
