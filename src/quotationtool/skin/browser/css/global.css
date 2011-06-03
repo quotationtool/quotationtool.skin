@@ -214,6 +214,7 @@ label .required {
     font-weight: 600;
 }
 
+.current-editorial-status,
 .wizard .viewspace .form-info,
 .edit-form .viewspace .form-info {
     margin-top: 10px;
@@ -574,13 +575,26 @@ div.comment-edit-button {
     margin: 5px 0 3px 0;
 }
 
+.revision-history hr,
 hr.commentary-ruler {
     border: 0;
     border-top: 1px solid #a9bcd5;
     margin: 3px 0 20px 0;
 }
 
+.revision-history .revision {
+    margin: 10px 0 0 0;
+}
 
+.current-editorial-status .editorial-comment,
+.revision-history .editorial-comment {
+    margin-top: 5px;
+    font-weight: 600;
+}
 
+a.revision-history-anchor {
+    display: block;
+    margin-top: 25px;
+}
 
 /* ]]> */
