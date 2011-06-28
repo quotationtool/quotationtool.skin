@@ -352,11 +352,19 @@ td span.fieldname {
 }
 
 
+.batch {
+    margin: 10px 0;
+}
 
+.batch a.current {
+    color: #333333;
+    text-decoration: none;
+}
 
-.container-listing .even, .container-listing .odd, .container-listing .head {
-        margin-top: 1px;
-        }
+.container-listing .even, 
+.container-listing .odd {
+    margin-top: 1px;
+}
 
 .container-listing .odd {
     background-color: #eee;
@@ -366,12 +374,14 @@ td span.fieldname {
     background-color: #f3f3f3;
     }
 
-.container-listing .head {
+.container-listing .head,
+.container-listing thead {
         background-color: #ddd;
 	font-weight: 600;
         } 
 
-.container-listing td {
+.container-listing td,
+.container-listing th {
         padding: 5px 5px 5px 2px;
 }
 .container-listing a {

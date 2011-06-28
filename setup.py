@@ -71,6 +71,7 @@ setup(
         'z3c.form',
         'zc.resourcelibrary',
         'z3c.menu.ready2go',
+        'z3c.table',
 
         'zope.app.pagetemplate',
         'zope.viewlet',
