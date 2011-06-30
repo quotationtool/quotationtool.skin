@@ -326,10 +326,48 @@ textarea.textarea-widget {
     margin-top:-100px;
 }
 
-/* search form */
+/* search */
 
-div.search-form-primer div.primer {
-    margin-bottom: 25px;
+#search-filters {
+    margin-top: 10px;
+}
+
+#search-filters .filter {
+    display: block;
+    margin-top: 2px;
+}
+
+#search-form {
+    margin-top: 10px;
+    border: 0;
+    font-size: 1em;
+}
+
+#search-form td {
+    vertical-align: top;
+    padding-top: 0.5em;
+}
+
+#search-form td.connector,
+#search-form td.criterium {
+    padding-right: 0.5em;
+}
+
+#search-form td.connector select,
+#search-form td.criterium select {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 1em;
+}
+
+#search-form td.connector select {
+}
+
+#search-form td.query input {
+    width: 25em;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
 }
 
 /* quotationtool.biblatex specific css classes */
