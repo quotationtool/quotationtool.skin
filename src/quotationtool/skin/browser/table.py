@@ -39,8 +39,8 @@ class SortingColumnHeader(header.ColumnHeader):
                      '%s-sortOrder' % prefix: sortOrder})
         queryString = '?%s' % (urllib.urlencode(args))
 
-        #CSS
-        if table.getSortOn() == self.column.id:
+        # CSS
+        if unicode(self.column.id).endswith('-'+str(currentSortID)):
             cssClass = u' class="active %s"' % sortOrder
         else:
             cssClass = u""

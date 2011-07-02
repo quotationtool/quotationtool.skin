@@ -422,6 +422,19 @@ td span.fieldname {
 .container-listing th {
         padding: 5px 5px 5px 2px;
 }
+
+.container-listing th a.active {
+    padding-left: 15px;
+    background-repeat: no-repeat;
+    background-position: 0 3px;
+}
+.container-listing th a.ascending {
+    background-image: url('/@@/quotationtool.images/triangle-up10.gif');
+}
+.container-listing th a.descending {
+    background-image: url('/@@/quotationtool.images/triangle-down10.gif');
+}
+
 .container-listing a {
         text-decoration: none;
         }
@@ -461,9 +474,17 @@ table.schema-view td.schema-col .required {
 div.add-content-options {
     margin-top: 20px;
 }
+.add-content-options form button.add-content {
+    background: transparent url('/@@/quotationtool.images/plus20.gif') no-repeat;
+    background-repeat: no-repeat;
+    background-position: 3px 2px;
+    padding: 5px 5px 5px 23px;
+    font-weight: 600;
+}
+
 
 #tutorial .add-content,
-.add-content-options a, 
+.add-content-options a,
 input.add-content, 
 input.apply-changes,
 input.cancel {
@@ -473,10 +494,9 @@ input.cancel {
         padding: 5px 10px;
         border-width: 3px;
         border-style: solid;
-        }
-
+}
 #tutorial .add-content,
-.add-content-options a, 
+.add-content-options a,
 input.add-content, 
 input.apply-changes {
         color: white;
@@ -486,8 +506,7 @@ input.apply-changes {
         border-bottom-color: darkgreen;
         border-left-color: lightgreen;
         }
-
-.add-content-options a:active, 
+.add-content-options a:active,
 input.add-content:active, 
 input.apply-changes:active {
         border-top-color: darkgreen;
@@ -495,9 +514,32 @@ input.apply-changes:active {
         border-bottom-color: lightgreen;
         border-left-color: darkgreen;
         }
-
-
-
+/*
+#tutorial .add-content,
+.add-content-options a {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 20px 10px;
+    padding: 5px 10px 5px 30px;
+    border-width: 2px;
+    border-style: solid;
+    color: #034ea2;
+    background-color: #d0d0d0;
+    border-top-color: #f0f0f0;
+    border-right-color: #999;
+    border-bottom-color: #999;
+    border-left-color: #f0f0f0;
+    background-image: url('/@@/quotationtool.images/plus20.gif');
+    background-repeat: no-repeat;
+    background-position: 5px 3px;
+}
+.add-content-options a:active {
+    border-bottom-color: #f0f0f0;
+    border-left-color: #999;
+    border-top-color: #999;
+    border-right-color: #f0f0f0;
+}
+*/
 #attribution-rows div.label label {
     font-size: 1.2em;
     font-weight: 600;
@@ -583,11 +625,19 @@ span.quotationtool-example-marker {
     border: 1px dotted #ccc;
 }
 
+#examplebyid {
+    margin-top: 10px;
+}
 #examplebyid div {
     display: inline;
+    margin: 0;
+    padding: 0;
 }
 #examplebyid h1 {
-    margin-bottom: 5px;
+    display: inline;
+    margin-bottom: 2px;
+    font-weight: normal;
+    font-size: 100%;
 }
 #examplebyid div.status {
     display: block;
@@ -595,9 +645,10 @@ span.quotationtool-example-marker {
     font-size: 1.0em;
 }
 #examplebyid input.text-widget {
-    width: 10em;
+    width: 4em;
 }
-
+#examplebyid button {
+}
 
 
 /* commentary */
