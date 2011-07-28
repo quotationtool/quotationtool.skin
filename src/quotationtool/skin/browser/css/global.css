@@ -474,6 +474,7 @@ table.schema-view td.schema-col .required {
 div.add-content-options {
     margin-top: 20px;
 }
+/*
 .add-content-options form button.add-content {
     background: transparent url('/@@/quotationtool.images/plus20.gif') no-repeat;
     background-repeat: no-repeat;
@@ -481,9 +482,10 @@ div.add-content-options {
     padding: 5px 5px 5px 23px;
     font-weight: 600;
 }
-
+*/
 
 #tutorial .add-content,
+.add-content-options form button.add-content,
 .add-content-options a,
 input.add-content, 
 input.apply-changes,
@@ -496,6 +498,7 @@ input.cancel {
         border-style: solid;
 }
 #tutorial .add-content,
+.add-content-options form button.add-content,
 .add-content-options a,
 input.add-content, 
 input.apply-changes {
@@ -506,8 +509,9 @@ input.apply-changes {
         border-bottom-color: darkgreen;
         border-left-color: lightgreen;
         }
+.add-content-options form button.add-content:active,
 .add-content-options a:active,
-input.add-content:active, 
+input.add-content:active,
 input.apply-changes:active {
         border-top-color: darkgreen;
         border-right-color: lightgreen;
