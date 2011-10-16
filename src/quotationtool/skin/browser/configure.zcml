@@ -127,6 +127,15 @@
       permission="zope.View"
       />
 
+  <!-- for the site -->
+  <view
+      name="label"
+      type="..interfaces.IQuotationtoolBrowserLayer"
+      for="zope.component.interfaces.IPossibleSite"
+      factory=".site.SiteLabelView"
+      permission="zope.View"
+      />
+
   <!-- default label and details and list views -->
   <view
       name="label"
