@@ -12,6 +12,7 @@
 
 	<div id="content">
 	  <div tal:content="structure context/@@details"/>
+	  <div class="itemactions" tal:content="structure provider:itemactions"/>
 	</div>
 
 	<div id="tabbedcontent-wrapper">

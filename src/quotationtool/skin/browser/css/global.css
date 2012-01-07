@@ -158,9 +158,20 @@ div.more-links {
 #content h2,
 #content h3,
 #content h4,
-#tabbedcontent h1 {
+#tabbedcontent h1,
+#tabbedcontent h2,
+#tabbedcontent h3,
+#tabbedcontent h4 {
     font-size: 1.1em;
 }
+
+#tabbedcontent h2,
+#tabbedcontent h3,
+#tabbedcontent h4 {
+    margin-top: 10pt;
+    margin-bottom: 5px;
+}
+
 #content pre,
 #tabbedcontent pre {
     font-size: 10pt;
@@ -698,6 +709,46 @@ hr.commentary-ruler {
 a.revision-history-anchor {
     display: block;
     margin-top: 25px;
+}
+
+/* ----- WORKFLOW ---- */
+
+.edit-form .viewspace .similar-work-items,
+.edit-form .viewspace .workitem-relations,
+.edit-form .viewspace .workitem-object,
+.edit-form .viewspace .workitem-workflow-history {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dae5f0;
+    padding: 5px;
+    width: 490px;
+}
+
+.workitem-object div.details,
+.workitem-workflow-history div.workflow-history {
+    height: 10em;
+    overflow: auto;
+}
+
+.workitem-object div.object-link {
+    margin-top: 3px;
+}
+
+#form-widgets-workflow-message {
+    height: 5em;
+}
+
+.process-started {
+    margin-bottom: 10px;
+}
+
+.transition {
+    display: none;
+}
+
+.user-notation .message {
+    margin-left: 1em;
+    font-weight: 600;
 }
 
 /* ]]> */

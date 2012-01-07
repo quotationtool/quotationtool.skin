@@ -77,6 +77,14 @@
       />
 
   <browser:viewletManager
+      name="itemactions"
+      class=".actions.ItemActionsManager"
+      provides="..interfaces.IItemActions"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      permission="zope.View"
+      />
+
+  <browser:viewletManager
       name="sidepanel"
       class=".sidepanel.SidePanel"
       provides="..interfaces.ISidePanel"

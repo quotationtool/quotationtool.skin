@@ -45,6 +45,10 @@ class IItemTabs(IMenuManager):
     """A manager for the tabs."""
 
 
+class IItemActions(IViewletManager):
+    """ A manager for actions on a database item."""
+
+
 class ISidePanel(IViewletManager):
     """A viewlet manager for components that should show up in the
     side panel."""
@@ -72,3 +76,7 @@ class IDiagnosticsPagelet(zope.interface.Interface):
 
 class ILoginFormExtensions(IViewletManager):
     """ Extensions e.g. "sign up" for the login form."""
+
+
+class ICSS(IViewletManager):
+    """ CSS viewlet."""
