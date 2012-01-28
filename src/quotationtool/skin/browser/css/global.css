@@ -716,7 +716,8 @@ a.revision-history-anchor {
 .edit-form .viewspace .similar-work-items,
 .edit-form .viewspace .workitem-relations,
 .edit-form .viewspace .workitem-object,
-.edit-form .viewspace .workitem-workflow-history {
+.edit-form .viewspace .workitem-workflow-history,
+.workflow .history .description {
     margin-top: 10px;
     margin-bottom: 10px;
     border: 1px solid #dae5f0;
@@ -726,7 +727,13 @@ a.revision-history-anchor {
 
 .workitem-object div.details,
 .workitem-workflow-history div.workflow-history {
-    height: 10em;
+    max-height: 10em;
+    overflow: auto;
+}
+
+.workflow .history .notations {
+    width: 500px;
+    max-height: 15em;
     overflow: auto;
 }
 
