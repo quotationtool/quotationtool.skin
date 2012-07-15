@@ -177,8 +177,8 @@ div.more-links {
     font-size: 10pt;
 }
 #content p {
-    margin-bottom: 10px;
     max-width: 50em;
+    margin-bottom: 10px;
 }
 #content blockquote,
 #tabbedcontent blockquote {
@@ -337,6 +337,18 @@ textarea.textarea-widget {
     margin-top:-100px;
 }
 
+/* item actions */
+
+div.itemactions {
+    margin-top: 10px;
+}
+
+div.itemaction {
+    display: inline;
+    hight: 16px;
+    width: 16px;
+}
+
 /* search */
 
 #search-filters {
@@ -462,12 +474,9 @@ td span.fieldname {
         border-bottom-style: dotted;
         }
 
-table.schema-view tr {
-        margin-bottom: 10px;
-        }
-
 table.schema-view td {
         vertical-align: top;
+        padding-bottom: 10px;
         }
 
 table.schema-view td.schema-col .title {
@@ -482,18 +491,17 @@ table.schema-view td.schema-col .required {
         color: red;
         }
 
+table.schema-view td.schema-col {
+    max-width: 20em;
+}
+
+table.schema-view td.data-col {
+    max-width: 40em;
+}
+
 div.add-content-options {
     margin-top: 20px;
 }
-/*
-.add-content-options form button.add-content {
-    background: transparent url('/@@/quotationtool.images/plus20.gif') no-repeat;
-    background-repeat: no-repeat;
-    background-position: 3px 2px;
-    padding: 5px 5px 5px 23px;
-    font-weight: 600;
-}
-*/
 
 #tutorial .add-content,
 .add-content-options form button.add-content,
@@ -501,60 +509,12 @@ div.add-content-options {
 input.add-content, 
 input.apply-changes,
 input.cancel {
-        text-decoration: none;
-        font-weight: bold;
-        margin: 20px 10px;
-        padding: 5px 10px;
-        border-width: 3px;
-        border-style: solid;
-}
-#tutorial .add-content,
-.add-content-options form button.add-content,
-.add-content-options a,
-input.add-content, 
-input.apply-changes {
-        color: white;
-        background-color: green;
-        border-top-color: lightgreen;
-        border-right-color: darkgreen;
-        border-bottom-color: darkgreen;
-        border-left-color: lightgreen;
-        }
-.add-content-options form button.add-content:active,
-.add-content-options a:active,
-input.add-content:active,
-input.apply-changes:active {
-        border-top-color: darkgreen;
-        border-right-color: lightgreen;
-        border-bottom-color: lightgreen;
-        border-left-color: darkgreen;
-        }
-/*
-#tutorial .add-content,
-.add-content-options a {
-    text-decoration: none;
-    font-weight: bold;
-    margin: 20px 10px;
-    padding: 5px 10px 5px 30px;
-    border-width: 2px;
-    border-style: solid;
-    color: #034ea2;
-    background-color: #d0d0d0;
-    border-top-color: #f0f0f0;
-    border-right-color: #999;
-    border-bottom-color: #999;
-    border-left-color: #f0f0f0;
-    background-image: url('/@@/quotationtool.images/plus20.gif');
+    background-image: url('/@@/quotationtool.images/add.png');
     background-repeat: no-repeat;
-    background-position: 5px 3px;
+    background-position: 3px 3px;
+    padding: 5px 5px 5px 20px;
 }
-.add-content-options a:active {
-    border-bottom-color: #f0f0f0;
-    border-left-color: #999;
-    border-top-color: #999;
-    border-right-color: #f0f0f0;
-}
-*/
+
 #attribution-rows div.label label {
     font-size: 1.2em;
     font-weight: 600;
@@ -619,25 +579,46 @@ input.attribution-widget {
 
 /* examples */
 
-span.quotationtool-example-quid {
-    background-image: url('/@@/quotationtool.images/quid.gif');
-}
-span.quotationtool-example-proquo {
-    background-image: url('/@@/quotationtool.images/proquo.gif');
-}
-
-span.quotationtool-example-marker {
-    background-image: url('/@@/quotationtool.images/marker.gif');
-}
 span.quotationtool-example-quid,
 span.quotationtool-example-proquo,
 span.quotationtool-example-marker {
+    padding: 0 5px;
+}
+
+span.quotationtool-example-quid {
+    background-color:#fff0f0;
+    border: 1px dotted #faa;
+}
+span.quotationtool-example-proquo {
+    background-color:#f0fff0;
+    border: 1px dotted #afa;
+}
+
+span.quotationtool-example-marker {
+    background-color:#f0f0ff;
+    border: 1px dotted #aaf;
+}
+
+div.form-info span.quotationtool-example-quid,
+div.form-info span.quotationtool-example-proquo,
+div.form-info span.quotationtool-example-marker {
+    padding: 0 5px 0 25px;
     background-repeat: no-repeat;
-    padding-left: 25px;
     min-height: 20px;
     display: inline-block;
-    background-color:#f0fcf0;
-    border: 1px dotted #ccc;
+}
+div.form-info span.quotationtool-example-quid {
+    background-image: url('/@@/quotationtool.images/quid.gif');
+}
+div.form-info span.quotationtool-example-proquo {
+    background-image: url('/@@/quotationtool.images/proquo.gif');
+}
+div.form-info span.quotationtool-example-marker {
+    background-image: url('/@@/quotationtool.images/marker.gif');
+}
+
+div.adjust-markup img {
+    padding-top: 20px;
 }
 
 #examplebyid {
