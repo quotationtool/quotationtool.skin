@@ -497,6 +497,7 @@ table.schema-view td.schema-col {
 
 table.schema-view td.data-col {
     max-width: 40em;
+    line-height: 145%;
 }
 
 div.add-content-options {
@@ -582,20 +583,20 @@ input.attribution-widget {
 span.quotationtool-example-quid,
 span.quotationtool-example-proquo,
 span.quotationtool-example-marker {
-    padding: 0 5px;
+    padding: 0 3px;
 }
 
 span.quotationtool-example-quid {
-    background-color:#fff0f0;
+    background-color:#ffe0e0;
     border: 1px dotted #faa;
 }
 span.quotationtool-example-proquo {
-    background-color:#f0fff0;
+    background-color:#e0ffe0;
     border: 1px dotted #afa;
 }
 
 span.quotationtool-example-marker {
-    background-color:#f0f0ff;
+    background-color:#e0e0ff;
     border: 1px dotted #aaf;
 }
 
