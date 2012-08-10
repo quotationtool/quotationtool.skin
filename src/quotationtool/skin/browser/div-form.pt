@@ -1,7 +1,7 @@
 <metal:macro use-macro="macro:form" i18n:domain="quotationtool">
   
   <metal:block fill-slot="extra-info">
-    <div class="form-info"
+    <div class="form-info" metal:define-macro="form-info"
 	 tal:condition="view/info|nothing">
       <span class="form-info-label" 
 	    i18n:translate="form-info">Note: </span>

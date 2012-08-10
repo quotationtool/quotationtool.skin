@@ -211,6 +211,11 @@
       template="div-form.pt"
       layer="..interfaces.IQuotationtoolBrowserLayer"
       />
+  <z3c:macro
+      name="form-info"
+      template="div-form.pt"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      />
  
 
   <include package=".authentication"/>

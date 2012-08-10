@@ -515,6 +515,8 @@ input.cancel {
     padding: 5px 5px 5px 20px;
 }
 
+/* ATTRIBUTION */
+
 #attribution-rows div.label label {
     font-size: 1.2em;
     font-weight: 600;
@@ -536,6 +538,25 @@ input.cancel {
     }
 
 input.attribution-widget {
+    }
+
+fieldset.attribution-subform {
+}
+    
+fieldset.attribution-subform legend {
+    display: block;
+    border: 1px solid #dae5f0;
+    padding: 5px;
+}
+
+div.reclassify-link {
+    margin: 10px 0;
+    }
+
+div.reclassify-link a {
+    padding: 0 0 5px 20px;
+    background-image: url('/@@/quotationtool.images/attribution.png');
+    background-repeat: no-repeat;
     }
 
 
@@ -698,7 +719,8 @@ a.revision-history-anchor {
 .edit-form .viewspace .workitem-relations,
 .edit-form .viewspace .workitem-object,
 .edit-form .viewspace .workitem-workflow-history,
-.workflow .history .description {
+.workflow .history .description,
+fieldset.attribution-subform {
     margin-top: 10px;
     margin-bottom: 10px;
     border: 1px solid #dae5f0;
