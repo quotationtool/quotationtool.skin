@@ -371,8 +371,8 @@ div.itemaction {
     padding-top: 0.5em;
 }
 
-#search-form td.connector,
-#search-form td.criterium {
+#search-form .connector,
+#search-form .criterium {
     padding-right: 0.5em;
 }
 
@@ -395,7 +395,6 @@ div.itemaction {
 
 /* quotationtool.biblatex specific css classes */
 
-
 .biblatexentry_formatted {
     font-weight: 600;
 }
@@ -411,7 +410,6 @@ div.itemaction {
 td span.fieldname {
     font-weight: 600;
 }
-
 
 .batch {
     margin: 10px 0;
@@ -429,11 +427,11 @@ td span.fieldname {
 
 .container-listing .odd {
     background-color: #eee;
-    }
+}
 
 .container-listing .even {
     background-color: #f3f3f3;
-    }
+}
 
 .container-listing .head,
 .container-listing thead {
@@ -443,7 +441,7 @@ td span.fieldname {
 
 .container-listing td,
 .container-listing th {
-        padding: 5px 5px 5px 2px;
+    padding: 5px 5px 5px 2px;
 }
 
 .container-listing th a.active {
@@ -459,43 +457,49 @@ td span.fieldname {
 }
 
 .container-listing a {
-        text-decoration: none;
-        }
+    text-decoration: none;
+}
         
 .container-listing a:hover {
-        text-decoration: underline;
-        }
+    text-decoration: underline;
+}
 
 .container-listing td {
-        vertical-align: top;
-        }
+    vertical-align: top;
+}
         
 #tutorial .tab {
-        border-bottom-style: dotted;
-        }
+    border-bottom-style: dotted;
+}
 
-table.schema-view td {
-        vertical-align: top;
-        padding-bottom: 10px;
-        }
+table.schema-view td,
+table.form-fields tbody td {
+    vertical-align: top;
+    padding-bottom: 10px;
+}
 
-table.schema-view td.schema-col .title {
+table.schema-view td.schema-col .title,
+table.form-fields tbody td.label label {
         font-weight: bold;
-        }
+}
 
-table.schema-view td.schema-col .description {
+table.schema-view td.schema-col .description,
+table.form-fields tbody td.label .description {
         font-size: 0.8em;
-        }
+}
 
-table.schema-view td.schema-col .required {
+table.schema-view td.schema-col .required,
+table.form-fields tbody td.label .required {
         color: red;
-        }
+}
 
-table.schema-view td.schema-col {
+table.schema-view td.schema-col,
+table.form-fields tbody td.label {
     max-width: 20em;
 }
 
-table.schema-view td.data-col {
+table.schema-view td.data-col,
+table.form-fields tbody td.field {
     max-width: 40em;
     line-height: 145%;
 }
@@ -516,7 +520,13 @@ input.cancel {
     padding: 5px 5px 5px 20px;
 }
 
-/* ATTRIBUTION */
+/* CATEGORIES and ATTRIBUTION */
+
+ul.categories-vector {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 20px;
+}
 
 #attribution-rows div.label label {
     font-size: 1.2em;
@@ -541,13 +551,40 @@ input.cancel {
 input.attribution-widget {
     }
 
-fieldset.attribution-subform {
+#search-categories {
+    width: 490px;
+}
+
+fieldset.attribution-subform,
+#search-categories fieldset {
+    border: 1px solid #dae5f0;
+    padding: 5px;
+    margin-top: 10px;
 }
     
-fieldset.attribution-subform legend {
+fieldset.attribution-subform legend,
+#search-categories fieldset legend {
     display: block;
     border: 1px solid #dae5f0;
     padding: 5px;
+}
+
+#search-categories .category-checkbox-row {
+    margin-top: 2px;
+}
+
+#search-categories .category-checkbox-row .title {
+}
+
+#search-categories select.connector {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 0.8em;
+    vertical-align: top;
+}
+
+#search-categories .category-checkbox {
+    margin-top: 0px;
 }
 
 div.reclassify-link {

@@ -217,6 +217,16 @@
       layer="..interfaces.IQuotationtoolBrowserLayer"
       />
  
+  <z3c:template
+      template="div-form-display.pt"
+      for="z3c.form.interfaces.IDisplayForm"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      />
+  <z3c:macro
+      name="subform-display"
+      template="div-form-display.pt"
+      layer="quotationtool.skin.interfaces.IQuotationtoolBrowserLayer"
+      />
 
   <include package=".authentication"/>
       

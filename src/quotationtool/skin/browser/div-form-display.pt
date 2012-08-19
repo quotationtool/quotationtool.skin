@@ -1,0 +1,78 @@
+<metal:block define-macro="subform-display" i18n:domain="quotationtool">
+  <div class="viewspace" metal:define-slot="viewspace">
+    <metal:block define-slot="label">
+      <h1 metal:define-macro="label"
+          tal:condition="view/label|nothing"
+          tal:content="view/label">
+        Form Label
+      </h1>
+    </metal:block>
+    <div metal:define-slot="extra-info" tal:replace="nothing">
+    </div>
+    <div metal:define-slot="main">
+      <table class="form-fields" metal:define-macro="formtable">
+        <tr class="extraTopRow"
+            metal:define-slot="extra_top"
+            tal:replace="nothing">
+          <td class="label"> Extra top </td>
+          <td class="field"><input type="text" />
+          </td>
+        </tr>
+        <tbody metal:define-slot="formbody" tal:omit-tag="">
+	  <tal:block omit-tag="" repeat="widget view/widgets/values">
+	    <tr metal:define-macro="formrow" class="row" 
+		tal:condition="python:widget.mode != 'hidden'">
+	      <td class="schema-col label" metal:define-macro="labelcell">
+		<label for="">
+		  <span i18n:translate=""
+			tal:content="widget/label">Label</span
+			><span class="required" 
+			tal:condition="widget/required|nothing"
+			>*</span>
+		</label>
+		<tal:block condition="widget/field/description | nothing"
+			   ><br
+			   /><span class="description" tal:content="widget/field/description"
+			   >Description</span
+			   ></tal:block>
+	      </td>
+	      <td class="field" metal:define-macro="widgetcell">
+		<span class="widget" tal:content="structure widget/render">
+		  <input type="text" size="24" value="" />
+		</span>
+	      </td>
+	    </tr>
+	  </tal:block>
+	</tbody>
+	<tr class="extraBottomRow"
+            metal:define-slot="extra_bottom"
+            tal:replace="nothing">
+          <td class="label"> Extra bottom </td>
+          <td class="label"><input type="text" />
+          </td>
+        </tr>
+      </table>
+      <metal:block define-macro="groups">
+        <fieldset tal:condition="view/groups|nothing"
+                    tal:repeat="view view/groups">
+          <legend tal:condition="view/label"
+                  tal:content="view/label">Label</legend>
+          <metal:block define-slot="group-header">
+          </metal:block>
+          <metal:block define-slot="group-rows">
+            <div metal:use-macro="macro:form-table" />
+          </metal:block>
+        </fieldset>
+      </metal:block>
+      <tal:block repeat="widget view/widgets/values"
+            ><input type="hidden" value=""
+                    tal:condition="python:widget.mode == 'hidden'"
+                    tal:replace="structure widget/render"
+      /></tal:block>
+    </div>
+    <metal:block define-slot="above-buttons">
+    </metal:block>
+  </div>
+  <metal:block define-slot="bottom">
+  </metal:block>
+</metal:block>
