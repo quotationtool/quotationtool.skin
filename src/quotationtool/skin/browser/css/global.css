@@ -597,6 +597,10 @@ div.reclassify-link a {
     background-repeat: no-repeat;
     }
 
+div.category-long-description div.long_description-footer {
+    margin-top: 3em;
+    border-top: 1px solid #a9bcd5;
+}
 
 
 .faq-answer {
