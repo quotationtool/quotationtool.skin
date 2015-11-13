@@ -27,6 +27,10 @@ div.more-links {
     margin: 5px 0 10px 0;
 }
 
+div.limited-rendering div {
+    display: inline;
+}
+
 /* header */
 #header {
     margin: 10px 0 18px 10px;
