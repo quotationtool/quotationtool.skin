@@ -1,5 +1,7 @@
-<div id="sidepanel"
-    tal:repeat="viewlet view/viewlets">
-  <div class="sidepanel-component"
-      tal:content="structure viewlet/render"/>
+<div id="sidepanel-wrapper" tal:condition="python:len(view.viewlets)">
+  <div id="sidepanel"
+      tal:repeat="viewlet view/viewlets">
+    <div class="sidepanel-component"
+	tal:content="structure viewlet/render"/>
+  </div>
 </div>

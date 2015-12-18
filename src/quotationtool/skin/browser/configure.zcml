@@ -89,6 +89,7 @@
       class=".sidepanel.SidePanel"
       provides="..interfaces.ISidePanel"
       layer="..interfaces.IQuotationtoolBrowserLayer"
+      template="sidepanel.pt"
       permission="zope.View"
       />
 
