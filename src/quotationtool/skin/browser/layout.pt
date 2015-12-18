@@ -57,7 +57,9 @@
 	    <a href="/categories/">Categories</a>
 	  </li>
 	</ul>
-	<div id="login-link" tal:define="principal_id request/principal/id">
+	<div metal:define-slot="login-link" id="login-link">
+	  <metal:macro define-macro="login-link">
+	  <tal:block define="principal_id request/principal/id">
 	  <a  
 	      tal:condition="python: principal_id == 'zope.anybody'"
 	      href="@@login.html"
@@ -79,6 +81,8 @@
 	      logout
 	    </a>
 	  </span>
+	  </tal:block>
+	  </metal:macro>
 	</div>
       </div><!-- mainnav -->
       <br class="cleaner"/>

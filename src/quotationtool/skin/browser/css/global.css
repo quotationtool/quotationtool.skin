@@ -57,13 +57,13 @@ div.limited-rendering div {
 
 /* ---------- MAINNAV ---------- */
 /*#mainnav {min-width:780px;} makes a mess with IE7 */
-#mainnav {overflow:hidden;}
+#mainnav {position:relative;top:0;left:0;right:0;}
 #mainnav ul, #mainnav ul ul { 
     float:left; 
     list-style:none;
 } /*keine height, wg. pixelabstand unten*/
 #mainnav ul li {
-    float:left; 
+    float:left;
     background:url(++resource++quotationtool.images/mainnav-right.gif) no-repeat top right;
 }
 #mainnav li a {
@@ -78,6 +78,7 @@ div.limited-rendering div {
 #mainnav li.selected {
     background:url(++resource++quotationtool.images/mainnav-right1.gif) no-repeat top right;
 }
+/*#mainnav li a {border-bottom:1px solid #dae5f0;}*/
 #mainnav li.selected .active {
     padding:0.5em 2em 0.6em 1em; 
     font-size:0.7em; 
