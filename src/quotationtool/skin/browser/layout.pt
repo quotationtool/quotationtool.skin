@@ -113,8 +113,11 @@
 	</metal:slot>
 	  
       </div><!-- content-wrapper -->
-      
-      <div id="footer" tal:content="structure context/@@footerInfo|nothing"></div>
+
+      <br class="cleaner"/>
+      <div id="footer-wrapper">
+	<div id="footer" tal:content="structure context/@@footerInfo|nothing"></div>
+      </div>
 
     </div><!-- wrapper2 -->
     </div><!-- wrapper -->
