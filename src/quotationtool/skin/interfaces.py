@@ -41,6 +41,11 @@ class ISubNavManager(IMenuManager):
     """A manager for a subnavigation. This is only a base interface
     and should be derived by each subnavigation manager."""
 
+
+class IOtherNav(IMenuManager):
+    """A manager for the other navigation, e.g. help."""
+
+
 class IItemTabs(IMenuManager):
     """A manager for the tabs."""
 

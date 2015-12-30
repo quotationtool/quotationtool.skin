@@ -8,6 +8,7 @@
 # quotationtool.skin.interfaces.ILoginFormExtensions
 
 from zope.viewlet.manager import ViewletManager, WeightOrderedViewletManager
+from z3c.menu.ready2go.item import SiteMenuItem
 
 from quotationtool.skin import interfaces
 
@@ -16,4 +17,8 @@ LoginFormExtensions = ViewletManager('loginform_extensions',
                                      interfaces.ILoginFormExtensions,
                                      bases = (WeightOrderedViewletManager,),
                                      )
+
+
+class LoginMenuItem(SiteMenuItem):
+    """A menu item with a link to the login form."""
 

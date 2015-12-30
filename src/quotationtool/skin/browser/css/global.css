@@ -115,11 +115,12 @@ div.limited-rendering div {
 
 #bgmainnav {left:0; background-color:#6985a5; min-width:780px; width:99.9%; height:1.5em; border-left:1px solid #a9bcd5;}
 
-/* left aligned*/
-#nav2 ul {position:absolute; right:0; width:22em; }/*width ist wichtig für IE 7, da sonst die zweite Ebene der Mainnav einen sehr eingeschränkten linksensitiven Bereich hat*/
-#nav2 li {float:right; text-align:right;}
-#nav2 li a {padding:0.4em 1em 0.25em 0.5em; font-size:0.7em; font-weight:bold; color:#fff; text-decoration:none;}
-#nav2 li.current {font-size:0.7em; font-weight:bold; color:#ffff00; padding:0.4em 1em 0.25em 0.5em;}
+/* right aligned*/
+#othernav {float: right;}
+#othernav ul {position:relative; right:0; list-style:none;}/*width ist wichtig für IE 7, da sonst die zweite Ebene der Mainnav einen sehr eingeschränkten linksensitiven Bereich hat*/
+#othernav li {float:right; text-align:right; padding:0.4em 1em 0.25em 0.5em; font-size:0.7em; font-weight:bold; color:#fff;}
+#othernav li a {text-decoration:none; color:#fff;}
+#othernav li.current {font-size:0.7em; font-weight:bold; color:#ffff00; padding:0.4em 1em 0.25em 0.5em;}
 #direkthilfe {display:none; position:absolute; right:0.5em; top:11em; width:300px; z-index:10; padding:5px; font-size:0.7em; background-color:#ffffcc; border:1px solid #ccc; z-index:100;}
 
 

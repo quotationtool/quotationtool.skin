@@ -87,13 +87,10 @@
       </div><!-- mainnav -->
       <br class="cleaner"/>
       <div id="bgmainnav">
-	<div id="nav2">
-	  <ul>
+	<div id="othernav">
+	  <ul tal:content="structure provider:othernav">
 	    <li>
-	      <a 
-		  href="/help.html"
-		  tal:attributes="href string:${request/URL/0}/@@help.html"
-		  i18n:translate="">Help</a>
+	      <a href="/help.html">Help</a>
 	    </li>
 	  </ul>
 	</div>

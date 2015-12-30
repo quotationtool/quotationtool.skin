@@ -12,7 +12,14 @@ MainNav = ViewletManager('mainnav', ISiteMenu,
 
 interfaces.IMainNav.implementedBy(MainNav)
 
-
 class MainNavItem(SiteMenuItem):
     pass
 
+
+OtherNav = ViewletManager('othernav', ISiteMenu,
+                          bases = (MenuManager,))
+
+interfaces.IOtherNav.implementedBy(OtherNav)
+
+class OtherNavItem(SiteMenuItem):
+    pass

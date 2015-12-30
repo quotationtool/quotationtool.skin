@@ -1,0 +1,27 @@
+<li id="login-nav-item" class="current"
+    tal:attributes="class view/css"
+    i18n:domain="quotationtool">
+  <tal:block define="principal_id request/principal/id">
+    <a  
+	tal:condition="python: principal_id == 'zope.anybody'"
+	href="@@login.html"
+	tal:attributes="href string:${context/@@absolute_url}/@@login.html"
+	i18n:translate="layout-login-link">
+      login
+    </a>
+    <span 
+	tal:condition="python: principal_id != 'zope.anybody'">
+      <span
+	  i18n:translate="layout-loggedin-info">
+	Logged in as:
+	<span tal:content="request/principal/title|default"
+	      i18n:name="user">some user</span>
+      </span>
+      <a href="@@logout.html"
+	 tal:attributes="href string:${context/@@absolute_url}/@@logout.html"
+	 i18n:translate="layout-logout-link">
+	logout
+      </a>
+    </span>
+  </tal:block>
+</li>

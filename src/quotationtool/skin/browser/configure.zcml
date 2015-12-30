@@ -75,6 +75,35 @@
       />
 
   <browser:viewletManager
+      name="othernav"
+      class=".nav.OtherNav"
+      provides="..interfaces.IOtherNav"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      permission="zope.View"
+      />
+  <z3c:template
+      for=".nav.OtherNavItem"
+      template="mainnavitem.pt"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      />
+
+  <!-- activate if needed
+  <z3c:siteMenuItem
+      for="*"
+      name="login"
+      class=".login.LoginMenuItem"
+      permission="zope.View"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      manager="..interfaces.IOtherNav"
+      weight="10"
+      /-->
+  <z3c:template
+      for=".login.LoginMenuItem"
+      template="login.pt"
+      layer="..interfaces.IQuotationtoolBrowserLayer"
+      />
+
+  <browser:viewletManager
       name="itemtabs"
       class=".tabs.ItemTabs"
       provides="..interfaces.IItemTabs"
